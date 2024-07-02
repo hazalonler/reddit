@@ -3,19 +3,58 @@
     margin: 0;
     padding: 0;
     font-family: "Playfair Display", serif;
+    font-size: 16px;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: rgb(247, 245, 244);
+    justify-content: space-around;
+    padding: 0 20px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05) !important;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     flex-basis: 30%;
+    align-items: center;
+    color: #3d5af1;
+    margin: 20px 20px;
 }
 
 p {
     font-weight: 600;
+    font-size: 1.3rem;
+    padding: 0 0 0 6px;
+}
+
+span {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.search-bar {
+    display: flex;
+    margin: 20px;
+}
+
+#search {
+    flex-grow: 1;
+    height: 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: rgb(235, 234, 234);
+}
+
+#search:active {
+    border: 0.1rem solid blue;
+}
+
+
+.search-icon {
+    height: 2rem;
+    display: flex;
 }

@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
