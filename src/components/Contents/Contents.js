@@ -1,12 +1,13 @@
 import Content from '../Content/Content';
 
-const Contents = (prop) => {
+const Contents = (props) => {
     return (
         <div style={{padding: '10px'}}>
-            {prop.contents.map(content => {
+            {props.contents.map(content => {
                 return (
                     <Content 
-                    content={content}                
+                        key={content.id}
+                        content={content}                
                     />
                 )
             })}

@@ -13,7 +13,7 @@ const contents = [
         {comment: "ndsnjd", contentId: '123', commentId: '234'}, 
         {comment: "jsdjbsjb", contentId: '123', commentId: '235'}
       ],
-      lastUpdateTime: "2024-04-25T21:30:05",
+      publishTime: "2024-04-25T21:30:05Z",
       voteNum: 15,
     },
     {
@@ -24,7 +24,7 @@ const contents = [
       comments: [
         {comment: "fjdsnsndn", contentId: '124', commentId: '237'}, 
       ],
-      lastUpdateTime: "2024-04-25T21:30:05",
+      publishTime: "2024-04-25T21:30:05Z",
       voteNum: 15,
     },
     {
@@ -35,7 +35,7 @@ const contents = [
       comments: [
 
       ],
-      lastUpdateTime: "2024-04-25T21:30:05",
+      publishTime: "2024-07-01T21:30:05Z",
       voteNum: 15,
     },
     {
@@ -49,7 +49,7 @@ const contents = [
         {comment: "djsbfsbfudbs", contentId: '126', commentId: '434'}, 
         {comment: "fnsdbfifbdsfsd", contentId: '126', commentId: '535'}
       ],
-      lastUpdateTime: "2024-04-25T21:30:05",
+      publishTime: "2024-06-25T21:30:05Z",
       voteNum: 15,
     },
   ]
