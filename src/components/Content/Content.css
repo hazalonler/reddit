@@ -35,3 +35,25 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.author span {
+    color: #3d5af1;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.duration, .comment-num p{
+    font-size: 0.8rem;
+}
+
+.vote-up, .vote-down {
+    cursor: pointer !important;
+    background-color: white;
+    border: none;
+}
+
+.comment-num{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 

@@ -8,6 +8,7 @@ const contents = [
       id: '123',
       photoUrl: '',
       content: "My deck caught on fire while my daughter was grilling. We're moving out in about a month, what's the best way to fix it?",
+      about: "Home",
       contentCreator: "jdsbdsfgsg",
       comments: [
         {comment: "ndsnjd", contentId: '123', commentId: '234'}, 
@@ -20,6 +21,7 @@ const contents = [
       id: '124',
       photoUrl: '',
       content: "Help me with Water valve- what is what?",
+      about: "AskReddit",
       contentCreator: "bssebdsb",
       comments: [
         {comment: "fjdsnsndn", contentId: '124', commentId: '237'}, 
@@ -31,6 +33,7 @@ const contents = [
       id: '125',
       photoUrl: '',
       content: "Best way to hide this Google Fiber cord?",
+      about: "NoStupidQuestions",
       contentCreator: "sjsdnjnsnd",
       comments: [
 
@@ -42,6 +45,7 @@ const contents = [
       id: '126',
       photoUrl: '',
       content: "Home Renovation ideas",
+      about: "AskReddit",
       contentCreator: "hdsbsbsd",
       comments: [
         {comment: "dnsibbshbsbzib", contentId: '126', commentId: '238'}, 
@@ -54,13 +58,29 @@ const contents = [
     },
   ]
 
+const subreddits = [
+    {
+      title: "Home",
+      contents: []
+    },
+    {
+      title: "AskReddit",
+      contents: [],  
+    },
+    {
+      title: "NoStupidQuestions",
+      contents: []
+    }
+]
+
+
 function App() {
   return (
     <div className="App">
         <Header></Header>
         <div className='main'>
           <Contents contents={contents}></Contents>
-          <Subreddits></Subreddits>
+          <Subreddits subreddits={subreddits}></Subreddits>
         </div>
     </div>
   );
