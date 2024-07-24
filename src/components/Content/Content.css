@@ -7,16 +7,82 @@
     min-height: 100px;
 }
 
-.content {
+.post {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 100%;
-    
+    margin-left: 1.5rem;
 }
 
-h2 {
+.icon-action {
+    font-size: 1.5rem;
+}
+
+  
+.icon-action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius);
+}
+
+.post-votes-container .post-votes-value {
+    margin: var(--spacing-1) 0;
+    font-weight: bold;
+}
+
+.post-votes-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 2%;
+    align-items: center;
+}
+
+.post-votes-value.up-vote {
+    color: var(--color-success) !important;
+}
+
+.post-votes-value.down-vote {
+    color: var(--color-alert) !important;
+}
+
+.up-vote:hover {
+    color: var(--color-success) !important;
+}
+
+.up-vote.active {
+    color: var(--color-success) !important;
+}
+
+.down-vote:hover {
+    color: var(--color-alert) !important;
+}
+
+.down-vote.active {
+    color: var(--color-alert) !important;
+}
+
+.post-image-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-2);
+}
+
+.post-image-container .post-image {
+  width: 100%;
+}  
+
+.post-title {
     text-align: start;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-header);
+    font-size: 1.5rem;
 }
 
 h6 {
@@ -24,16 +90,23 @@ h6 {
     font-size: 0.8rem;
 }
 
-.vote-num {
-    flex-basis: 5%;
-}
 
+.post-details {
+    margin-top: var(--spacing-2);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-1);
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 .author {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 0.8rem;
 }
 
 .author span {
@@ -42,18 +115,16 @@ h6 {
     font-size: 0.8rem;
 }
 
-.duration, .comment-num p{
+.duration {
     font-size: 0.8rem;
 }
 
-.vote-up, .vote-down {
-    cursor: pointer !important;
-    background-color: white;
-    border: none;
+.post-comments-container {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
 }
 
-.comment-num{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-} 
+.post-comments-container .icon-action {
+    margin-right: var(--spacing-0);
+}
