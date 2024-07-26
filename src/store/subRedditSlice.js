@@ -23,7 +23,7 @@ export default subRedditSlice.reducer;
 
 export const fetchSubreddits = () => async (dispatch) => {
     const subreddits = await getSubreddits();
-    dispatch(getSubreddits(subreddits));
+    dispatch(getSubreddit(subreddits));
 };
 
 export const selectSubreddits = (state) => state.subreddits.subreddits;
